@@ -14,7 +14,25 @@ Notes:
 - Return an empty list if n == 0.
 """
 
-
 def last(a, n):
     # Your code here
+    if n == 0:
+        return []
+    elif len(a) < n:
+        return 'invalid'
+    return a[-n:]
+​
+my_list = [4, 3, 9, 9, 7, 6, 12]
+​
+# print(last(my_list, 9))
+​
+# print(my_list[0:3])
+​
+# print(my_list[:5]) #From zero to 5th index
+​
+# print(my_list[5:]) # from index 5 to end 
+​
+# print(my_list[-3:]) # The last 3 elements!
+​
+print(my_list[5:1:-1]) # Go backwards
 
